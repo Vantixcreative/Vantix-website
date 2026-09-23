@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vantix Creative | Creative Marketing & Brand Strategy Studio</title>
+
+<meta name="description" content="Vantix Creative is a creative marketing and brand strategy studio helping ambitious brands build visibility, credibility and demand.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #080808;
+    color: #f5f2ec;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 25px 0;
+    background: rgba(8, 8, 8, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #c9a45c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #d8d5ce;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c9a45c;
+}
+
+.nav-button {
+    padding: 11px 20px;
+    border: 1px solid #c9a45c;
+    color: #c9a45c !important;
+}
+
+.nav-button:hover {
+    background: #c9a45c;
+    color: #080808 !important;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(201, 164, 92, 0.08);
+    border-radius: 50%;
+    filter: blur(100px);
+    top: 10%;
+    right: -200px;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 900px;
+}
+
+.eyebrow {
+    color: #c9a45c;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(52px, 8vw, 100px);
+    line-height: 0.98;
+    font-weight: 600;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #c9a45c;
+}
+
+.hero-text {
+    max-width: 650px;
+    color: #aaa69e;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.button-primary {
+    background: #c9a45c;
+    color: #080808;
+}
+
+.button-primary:hover {
+    background: #e0bf78;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    border: 1px solid #555;
+    color: #f5f2ec;
+}
+
+.button-secondary:hover {
+    border-color: #c9a45c;
+    color: #c9a45c;
+}
+
+/* INTRO */
+
+.intro {
+    padding: 120px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-label {
+    color: #c9a45c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.1;
+    max-width: 900px;
+    font-weight: 500;
+}
+
+.intro h2 span {
+    color: #77736c;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 120px 0;
+    background: #0d0d0d;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.services-header h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+}
+
+.services-header p {
+    max-width: 430px;
+    color: #99958d;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #292929;
+    border-left: 1px solid #292929;
+}
+
+.service-card {
+    padding: 40px 30px;
+    min-height: 260px;
+    border-right: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    background: #131313;
+}
+
+.service-number {
+    color: #c9a45c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #88847d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* POSITIONING */
+
+.positioning {
+    padding: 140px 0;
+}
+
+.positioning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.positioning h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 1.05;
+    font-weight: 500;
+}
+
+.positioning h2 span {
+    color: #c9a45c;
+}
+
+.positioning-text p {
+    color: #9b978f;
+    margin-bottom: 25px;
+    line-height: 1.9;
+}
+
+.statement {
+    margin-top: 35px;
+    padding-left: 25px;
+    border-left: 2px solid #c9a45c;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+/* INDUSTRIES */
+
+.industries {
+    padding: 100px 0;
+    background: #0d0d0d;
+}
+
+.industry-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.industry {
+    padding: 13px 20px;
+    border: 1px solid #333;
+    color: #b4b0a8;
+    font-size: 13px;
+}
+
+/* CTA */
+
+.cta {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px, 7vw, 90px);
+    line-height: 1;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.cta p {
+    color: #99958d;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #252525;
+    padding: 40px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: #77736c;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .services-header,
+    .positioning-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .positioning-grid {
+        gap: 50px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="container nav-inner">
+
+        <a href="#" class="logo">
+            VANTIX<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li>
+                <a href="#contact" class="nav-button">
+                    Let's Talk
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Creative Marketing & Brand Strategy Studio
+            </div>
+
+            <h1>
+                Your brand deserves
+                <span>more than noise.</span>
+            </h1>
+
+            <p class="hero-text">
+                Vantix Creative helps ambitious brands turn strategy,
+                creativity and digital marketing into stronger positioning,
+                meaningful attention and demand.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="button button-primary">
+                    Start a Conversation
+                </a>
+
+                <a href="#services" class="button button-secondary">
+                    Explore Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro" id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            The Vantix Approach
+        </div>
+
+        <h2>
+            We don't just make brands
+            <span>look active.</span>
+            We make them make sense.
+        </h2>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="services-header">
+
+            <div>
+
+                <div class="section-label">
+                    What We Do
+                </div>
+
+                <h2>
+                    Strategy.<br>
+                    Creativity.<br>
+                    Execution.
+                </h2>
+
+            </div>
+
+            <p>
+                From how your brand is positioned to how it appears in the
+                market, we connect the thinking behind your business with
+                the content people actually see.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <div class="service-number">01</div>
+
+                <h3>
+                    Social Media Management
+                </h3>
+
+                <p>
+                    Strategic social media management designed around your
+                    business objectives, audience and positioning.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">02</div>
+
+                <h3>
+                    Content Strategy & Creative Direction
+                </h3>
+
+                <p>
+                    Content systems and creative direction that give your
+                    brand a clearer voice, stronger presence and more
+                    intentional communication.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">03</div>
+
+                <h3>
+                    Brand Strategy & Positioning
+                </h3>
+
+                <p>
+                    Defining how your business should be understood,
+                    remembered and differentiated in its market.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">04</div>
+
+                <h3>
+                    Digital Marketing
+                </h3>
+
+                <p>
+                    Digital campaigns and marketing systems designed to
+                    support awareness, growth, leads and conversions.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">05</div>
+
+                <h3>
+                    Local & Advanced SEO
+                </h3>
+
+                <p>
+                    Search strategies that improve discoverability,
+                    visibility and qualified organic traffic.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">06</div>
+
+                <h3>
+                    Brand Perception & Conversion
+                </h3>
+
+                <p>
+                    Aligning what your brand communicates with what
+                    customers need to believe before they buy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- POSITIONING -->
+
+<section class="positioning">
+
+    <div class="container">
+
+        <div class="positioning-grid">
+
+            <div>
+
+                <div class="section-label">
+                    Why Vantix
+                </div>
+
+                <h2>
+                    Strategy is the
+                    <span>difference.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="positioning-text">
+
+                <p>
+                    Most businesses don't have an attention problem.
+                    They have a clarity problem.
+                </p>
+
+                <p>
+                    The message changes. The visuals change. The audience
+                    isn't sure what the brand stands for or why they
+                    should choose it.
+                </p>
+
+                <p>
+                    Vantix brings strategy into the creative process,
+                    so your marketing doesn't simply fill a content
+                    calendar. It moves the brand somewhere.
+                </p>
+
+                <div class="statement">
+                    Think strategically.<br>
+                    Execute intentionally.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INDUSTRIES -->
+
+<section class="industries" id="industries">
+
+    <div class="container">
+
+        <div class="section-label">
+            Industries We Work Across
+        </div>
+
+        <div class="industry-list">
+
+            <div class="industry">Real Estate</div>
+            <div class="industry">Construction</div>
+            <div class="industry">Technology</div>
+            <div class="industry">Hospitality</div>
+            <div class="industry">Beauty</div>
+            <div class="industry">Retail</div>
+            <div class="industry">Finance</div>
+            <div class="industry">Healthcare</div>
+            <div class="industry">E-commerce</div>
+            <div class="industry">Professional Services</div>
+            <div class="industry">Lifestyle</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <div class="section-label">
+            Start a Conversation
+        </div>
+
+        <h2>
+            Let's build a brand people understand.
+        </h2>
+
+        <p>
+            Tell us where your brand is now, where you want it to go,
+            and what you're trying to achieve.
+        </p>
+
+        <a href="mailto:hello@vantixcreative.com" class="button button-primary">
+            Book a Consultation
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            © 2026 Vantix Creative. All rights reserved.
+        </div>
+
+        <div>
+            Creative Marketing & Brand Strategy Studio
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
