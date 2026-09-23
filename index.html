@@ -1,0 +1,2152 @@
+Skip to content
+ 
+Search Gists
+Search...
+All gists
+Back to GitHub
+@Vantixcreative
+Vantixcreative/Index.html Secret
+Created now
+Code
+Revisions
+1
+Clone this repository at &lt;script src=&quot;https://gist.github.com/Vantixcreative/9a6b3e7ec6514f0fea01b12df55be3b5.js&quot;&gt;&lt;/script&gt;
+<script src="https://gist.github.com/Vantixcreative/9a6b3e7ec6514f0fea01b12df55be3b5.js"></script>
+Index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vantix Creative | Digital Marketing & Creative Strategy Agency</title>
+
+<meta name="description" content="Vantix Creative is a digital marketing and creative strategy agency helping companies build stronger brands through social media, content, digital marketing, websites, SEO and conversion.">
+
+<meta name="keywords" content="digital marketing agency, creative strategy agency, social media management, content strategy, brand strategy, SEO, website development, digital marketing, creative direction">
+
+<meta name="author" content="Vantix Creative">
+
+<meta property="og:title" content="Vantix Creative | Digital Marketing & Creative Strategy Agency">
+<meta property="og:description" content="Digital marketing, creative strategy, content, websites, SEO and conversion for companies working across markets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vantixcreative.github.io/Vantix-website/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --black: #080808;
+    --deep: #101010;
+    --soft-black: #151515;
+    --white: #f5f3ee;
+    --muted: #a5a29b;
+    --line: rgba(255,255,255,0.12);
+    --gold: #c8a76a;
+    --gold-light: #dfc58f;
+    --dark-text: #171717;
+    --light-bg: #f3f1eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.section-number {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.05;
+}
+
+.serif {
+    font-family: "Playfair Display", serif;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 52px;
+    padding: 0 24px;
+    border: 1px solid rgba(255,255,255,0.3);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+}
+
+.btn.gold-btn {
+    background: var(--gold);
+    color: #080808;
+    border-color: var(--gold);
+}
+
+.btn.gold-btn:hover {
+    background: var(--gold-light);
+    color: #080808;
+}
+
+/* Navigation */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(8,8,8,0.88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-inner {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.logo span {
+    display: block;
+    font-size: 7px;
+    letter-spacing: 0.48em;
+    margin-top: 3px;
+    color: var(--gold);
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav-links a {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #d6d3cc;
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.72) 43%, rgba(0,0,0,0.35) 100%),
+        linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 60%),
+        url("https://images.pexels.com/photos/4506937/pexels-photo-4506937.jpeg?auto=compress&cs=tinysrgb&w=2200") center center / cover no-repeat;
+    transform: scale(1.02);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 170px 0 105px;
+    max-width: 880px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 9vw, 126px);
+    letter-spacing: -0.055em;
+    margin: 22px 0 26px;
+    max-width: 950px;
+}
+
+.hero-copy {
+    max-width: 710px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d5d2ca;
+}
+
+.hero-location {
+    margin-top: 24px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 34px;
+    flex-wrap: wrap;
+}
+
+/* Image band */
+
+.image-band {
+    background: var(--black);
+    padding: 0 0 110px;
+}
+
+.image-band-grid {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 16px;
+}
+
+.image-card {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
+
+.image-card img {
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.image-card:hover img {
+    transform: scale(1.035);
+}
+
+.image-card.small img {
+    min-height: 430px;
+}
+
+.image-overlay {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 32px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8), transparent);
+}
+
+.image-overlay span {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+}
+
+.image-overlay h3 {
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Intro */
+
+.intro {
+    background: var(--light-bg);
+    color: var(--dark-text);
+    padding: 120px 0;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.6fr;
+    gap: 80px;
+}
+
+.intro h2 {
+    font-size: clamp(42px, 6vw, 76px);
+    letter-spacing: -0.045em;
+    max-width: 800px;
+}
+
+.intro-copy {
+    max-width: 680px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #4f4c46;
+}
+
+/* Services */
+
+.services {
+    background: var(--light-bg);
+    color: var(--dark-text);
+    padding: 0 0 120px;
+}
+
+.service {
+    border-top: 1px solid #d8d4ca;
+    padding: 65px 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 0.35fr 1.1fr 1fr;
+    gap: 50px;
+}
+
+.service-number {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: #8c7143;
+}
+
+.service h3 {
+    font-size: clamp(28px, 3vw, 43px);
+    letter-spacing: -0.035em;
+    margin-bottom: 24px;
+}
+
+.service-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #56534c;
+    max-width: 570px;
+}
+
+.service-list-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #8c7143;
+    margin-bottom: 18px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 18px;
+}
+
+.service-list span {
+    font-size: 12px;
+    color: #46433d;
+}
+
+/* Thinking */
+
+.thinking {
+    background: var(--black);
+    padding: 130px 0;
+}
+
+.thinking-header {
+    max-width: 820px;
+}
+
+.thinking h2 {
+    font-size: clamp(45px, 6vw, 78px);
+    letter-spacing: -0.05em;
+    margin-bottom: 36px;
+}
+
+.thinking-copy {
+    color: #aaa69e;
+    font-size: 18px;
+    line-height: 1.9;
+    max-width: 760px;
+}
+
+.thinking-copy p {
+    margin-bottom: 18px;
+}
+
+.thinking-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 90px;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.thinking-card {
+    min-height: 190px;
+    padding: 30px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.thinking-card span {
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+}
+
+.thinking-card h3 {
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Industries */
+
+.industries {
+    background: #111;
+    padding: 125px 0;
+}
+
+.industries h2 {
+    font-size: clamp(45px, 6vw, 80px);
+    max-width: 850px;
+    letter-spacing: -0.05em;
+    margin-bottom: 70px;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.industry {
+    padding: 22px 18px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    color: #bcb8b0;
+    font-size: 13px;
+    transition: 0.25s ease;
+}
+
+.industry:hover {
+    color: var(--gold);
+    background: #151515;
+}
+
+.industry-note {
+    margin-top: 30px;
+    color: #77736b;
+    font-size: 13px;
+    max-width: 700px;
+}
+
+/* Markets */
+
+.markets {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0;
+}
+
+.markets-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(8,8,8,0.96), rgba(8,8,8,0.76), rgba(8,8,8,0.58)),
+        url("https://images.pexels.com/photos/29596082/pexels-photo-29596082.jpeg?auto=compress&cs=tinysrgb&w=2000") center / cover no-repeat;
+}
+
+.markets-content {
+    position: relative;
+    max-width: 850px;
+}
+
+.markets h2 {
+    font-size: clamp(45px, 6vw, 82px);
+    letter-spacing: -0.055em;
+    margin: 22px 0 30px;
+}
+
+.markets p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #c4c0b8;
+    max-width: 720px;
+}
+
+/* Approach */
+
+.approach {
+    background: var(--light-bg);
+    color: var(--dark-text);
+    padding: 130px 0;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 90px;
+}
+
+.approach h2 {
+    font-size: clamp(43px, 5vw, 70px);
+    letter-spacing: -0.05em;
+}
+
+.approach-copy {
+    font-size: 20px;
+    line-height: 2;
+    color: #4f4c46;
+}
+
+.approach-copy strong {
+    color: #151515;
+    font-weight: 600;
+}
+
+.approach-list {
+    margin-top: 45px;
+    border-top: 1px solid #d4d0c6;
+}
+
+.approach-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #d4d0c6;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.approach-item span:last-child {
+    color: #8c7143;
+}
+
+/* Work */
+
+.work {
+    background: var(--black);
+    padding: 130px 0;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-end;
+    margin-bottom: 65px;
+}
+
+.work h2 {
+    font-size: clamp(46px, 6vw, 82px);
+    letter-spacing: -0.055em;
+}
+
+.work-intro {
+    color: #88847c;
+    max-width: 470px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.project {
+    background: #111;
+    overflow: hidden;
+    transition: 0.35s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 370px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.project:hover .project-image img {
+    transform: scale(1.04);
+}
+
+.project-info {
+    padding: 25px;
+    border: 1px solid #1d1d1d;
+    border-top: none;
+}
+
+.project-meta {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.project h3 {
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project-description {
+    margin-top: 10px;
+    color: #88847c;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.project-link {
+    display: inline-flex;
+    margin-top: 22px;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #e0ddd6;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+.project-link:hover {
+    color: var(--gold);
+}
+
+/* Image feature */
+
+.feature {
+    background: #111;
+    padding: 0 0 130px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    min-height: 580px;
+}
+
+.feature-image {
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.feature:hover .feature-image img {
+    transform: scale(1.025);
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    background: #151515;
+}
+
+.feature-content h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    letter-spacing: -0.05em;
+    margin: 20px 0 25px;
+}
+
+.feature-content p {
+    color: #97938b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Contact */
+
+.contact {
+    background: var(--light-bg);
+    color: var(--dark-text);
+    padding: 135px 0;
+}
+
+.contact h2 {
+    font-size: clamp(70px, 12vw, 150px);
+    letter-spacing: -0.07em;
+    margin: 22px 0 25px;
+}
+
+.contact-sub {
+    font-size: 18px;
+    color: #5c5952;
+    margin-bottom: 35px;
+}
+
+.contact .btn {
+    border-color: #252525;
+    color: #151515;
+}
+
+.contact .btn:hover {
+    border-color: #8c7143;
+    color: #8c7143;
+}
+
+/* Footer */
+
+.footer {
+    background: var(--black);
+    padding: 65px 0 35px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--line);
+}
+
+.footer-logo {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+}
+
+.footer-logo span {
+    display: block;
+    font-size: 7px;
+    letter-spacing: 0.5em;
+    color: var(--gold);
+    text-align: center;
+}
+
+.footer-description {
+    margin-top: 20px;
+    color: #77736b;
+    font-size: 12px;
+}
+
+.footer-services {
+    max-width: 500px;
+    color: #8c8880;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 28px;
+    color: #68645e;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .nav-inner {
+        min-height: 72px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .container {
+        width: min(100% - 34px, 720px);
+    }
+
+    .hero-content {
+        padding: 150px 0 75px;
+    }
+
+    .hero h1 {
+        font-size: clamp(53px, 14vw, 90px);
+    }
+
+    .hero-copy {
+        font-size: 16px;
+    }
+
+    .image-band {
+        padding-bottom: 70px;
+    }
+
+    .image-band-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-card img,
+    .image-card.small img {
+        min-height: 350px;
+    }
+
+    .intro,
+    .thinking,
+    .industries,
+    .markets,
+    .approach,
+    .work,
+    .contact {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .intro-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .thinking-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-header {
+        display: block;
+    }
+
+    .work-intro {
+        margin-top: 20px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-image {
+        min-height: 450px;
+    }
+
+    .feature-content {
+        padding: 55px 30px;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-services {
+        margin-top: 35px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .container {
+        width: min(100% - 28px, 520px);
+    }
+
+    .hero-content {
+        padding-top: 130px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .thinking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 280px;
+    }
+
+    .feature-image {
+        min-height: 340px;
+    }
+
+    .contact h2 {
+        font-size: 70px;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom div + div {
+        margin-top: 14px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+    <div class="container nav-inner">
+
+        <a href="#top" class="logo">
+            VANTIX
+            <span>CREATIVE</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#approach">Approach</a>
+            <a href="#industries">Industries</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+
+    </div>
+</nav>
+
+
+<main id="top">
+
+<section class="hero">
+
+    <div class="hero-image"></div>
+
+    <div class="container hero-content">
+
+        <div class="eyebrow">
+            Digital Marketing & Creative Strategy Agency
+        </div>
+
+        <h1>
+            Vantix<br>
+            <span class="serif gold">Creative</span>
+        </h1>
+
+        <p class="hero-copy">
+            Vantix Creative is a digital marketing agency helping companies build stronger brands digitally through social media, content, SEO, websites and strategic digital execution.
+        </p>
+
+        <div class="hero-location">
+            Based in Nairobi. Working remotely across markets.
+        </div>
+
+        <div class="hero-actions">
+            <a class="btn gold-btn" href="mailto:vantixcreativeagency@gmail.com">
+                Start a Conversation
+                <span>↗</span>
+            </a>
+
+            <a class="btn" href="#services">
+                Explore Services
+                <span>↓</span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="image-band">
+
+    <div class="container image-band-grid">
+
+        <div class="image-card">
+            <img
+                src="https://images.pexels.com/photos/7598075/pexels-photo-7598075.jpeg?auto=compress&cs=tinysrgb&w=1800"
+                alt="Professionally photographed creative strategy workspace"
+                loading="eager"
+            >
+
+            <div class="image-overlay">
+                <span>Creative Direction</span>
+                <h3>Ideas need structure before they need execution.</h3>
+            </div>
+        </div>
+
+        <div class="image-card small">
+            <img
+                src="https://images.pexels.com/photos/7014918/pexels-photo-7014918.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                alt="Professional content production workspace"
+                loading="lazy"
+            >
+
+            <div class="image-overlay">
+                <span>Digital Execution</span>
+                <h3>Built for brands operating in real markets.</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="intro">
+
+    <div class="container intro-grid">
+
+        <div>
+            <div class="section-number">01 · WHAT WE DO</div>
+        </div>
+
+        <div>
+            <h2>We look at the whole picture.</h2>
+
+            <p class="intro-copy" style="margin-top:35px;">
+                Vantix works across these layers, connecting brand, content, marketing, search, websites and conversion around the way a company actually needs to compete.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-number">02 · OUR SERVICES</div>
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">01</div>
+
+                <div>
+                    <h3>Social Media Management</h3>
+
+                    <p class="service-description">
+                        Social media is part of how a company is perceived, considered and remembered.
+                        <br><br>
+                        We manage the channel with attention to the brand, the platform, the audience and the performance of the content, from what gets published to what the data tells us to change.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="service-list-title">Includes</div>
+
+                    <div class="service-list">
+                        <span>Social Media Strategy</span>
+                        <span>Content Creation</span>
+                        <span>Publishing & Scheduling</span>
+                        <span>Platform Management</span>
+                        <span>Audience & Engagement Management</span>
+                        <span>Performance Analysis</span>
+                        <span>Competitor & Category Analysis</span>
+                        <span>Content Optimisation</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">02</div>
+
+                <div>
+                    <h3>Content Strategy & Creative Direction</h3>
+
+                    <p class="service-description">
+                        Effective content starts before production.
+                        <br><br>
+                        We establish what a company needs to communicate, which conversations it should participate in, how those ideas translate across platforms and what role each piece of content is expected to play.
+                        <br><br>
+                        This includes the planning and creative direction required to maintain consistency without making the brand predictable.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="service-list-title">Includes</div>
+
+                    <div class="service-list">
+                        <span>Content Strategy</span>
+                        <span>Content Audits</span>
+                        <span>Content Pillars</span>
+                        <span>Messaging Frameworks</span>
+                        <span>Editorial Planning</span>
+                        <span>Content Calendars</span>
+                        <span>Campaign Concepts</span>
+                        <span>Creative Direction</span>
+                        <span>Platform & Format Strategy</span>
+                        <span>Creative Briefs</span>
+                        <span>Content Optimisation</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">03</div>
+
+                <div>
+                    <h3>Brand Strategy & Positioning</h3>
+
+                    <p class="service-description">
+                        Positioning determines how a company occupies space in its market and what gives people a reason to distinguish it from the alternatives.
+                        <br><br>
+                        We examine the market, audience, competitive environment and existing brand to establish clearer positioning, messaging and direction.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="service-list-title">Includes</div>
+
+                    <div class="service-list">
+                        <span>Brand Strategy</span>
+                        <span>Brand Positioning</span>
+                        <span>Value Proposition</span>
+                        <span>Audience Profiling</span>
+                        <span>Market & Competitor Analysis</span>
+                        <span>Brand Differentiation</span>
+                        <span>Brand Messaging</span>
+                        <span>Brand Voice</span>
+                        <span>Brand Identity Direction</span>
+                        <span>Brand Architecture</span>
+                        <span>Brand Guidelines</span>
+                        <span>Repositioning & Brand Refresh</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">04</div>
+
+                <div>
+                    <h3>Digital Marketing</h3>
+
+                    <p class="service-description">
+                        Digital marketing should have a defined commercial role.
+                        <br><br>
+                        We plan and manage digital activity around the objective, audience and stage of the customer journey, connecting campaigns, channels and measurement rather than treating each activity separately.
+                        <br><br>
+                        Whether the priority is awareness, qualified traffic, leads, consideration or conversion, the execution is built around what the company needs the digital channel to accomplish.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="service-list-title">Includes</div>
+
+                    <div class="service-list">
+                        <span>Digital Marketing Strategy</span>
+                        <span>Campaign Planning</span>
+                        <span>Paid Digital Campaigns</span>
+                        <span>Audience Targeting</span>
+                        <span>Lead Generation</span>
+                        <span>Conversion Strategy</span>
+                        <span>Retargeting</span>
+                        <span>Digital Customer Journeys</span>
+                        <span>Campaign Optimisation</span>
+                        <span>Performance Analysis</span>
+                        <span>Marketing Funnel Strategy</span>
+                        <span>Conversion Tracking</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">05</div>
+
+                <div>
+                    <h3>Website Design & Development</h3>
+
+                    <p class="service-description">
+                        A website has to do more than look good.
+                        <br><br>
+                        It needs to represent the company accurately, make information easy to navigate, support the customer journey and provide the functionality required behind the interface.
+                        <br><br>
+                        We handle both the experience customers see and the digital infrastructure supporting it.
+                    </p>
+                </div>
+
+                <div>
+
+                    <div class="service-list-title">Design & Front End</div>
+
+                    <div class="service-list">
+                        <span>Website UI Design</span>
+                        <span>Responsive Web Design</span>
+                        <span>Landing Pages</span>
+                        <span>Business Websites</span>
+                        <span>E commerce Interfaces</span>
+                        <span>User Experience</span>
+                        <span>Mobile Optimisation</span>
+                        <span>Interactive Elements</span>
+                    </div>
+
+                    <div class="service-list-title" style="margin-top:28px;">Development & Functionality</div>
+
+                    <div class="service-list">
+                        <span>Website Functionality</span>
+                        <span>CMS Integration</span>
+                        <span>Database Integration</span>
+                        <span>Forms & Lead Capture</span>
+                        <span>API Integrations</span>
+                        <span>Website Administration</span>
+                        <span>E commerce Functionality</span>
+                    </div>
+
+                    <div class="service-list-title" style="margin-top:28px;">Digital Foundation</div>
+
+                    <div class="service-list">
+                        <span>Website Structure</span>
+                        <span>Sitemap & Content Architecture</span>
+                        <span>Conversion Focused Layouts</span>
+                        <span>SEO Ready Structure</span>
+                        <span>Analytics Integration</span>
+                        <span>Performance Optimisation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">06</div>
+
+                <div>
+                    <h3>Local & Advanced SEO</h3>
+
+                    <p class="service-description">
+                        Search is not only about ranking for keywords. It is about being discoverable for the searches that matter to the company.
+                        <br><br>
+                        We work across local, technical, on page and broader organic search to strengthen visibility, relevance and the underlying structure that allows a website to perform in search.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="service-list-title">Includes</div>
+
+                    <div class="service-list">
+                        <span>Local SEO</span>
+                        <span>Google Business Profile Optimisation</span>
+                        <span>Keyword Research</span>
+                        <span>Search Intent Analysis</span>
+                        <span>On Page SEO</span>
+                        <span>Technical SEO</span>
+                        <span>Content SEO</span>
+                        <span>Competitor SEO Analysis</span>
+                        <span>Internal Linking</span>
+                        <span>Metadata Optimisation</span>
+                        <span>Website Structure & Crawlability</span>
+                        <span>Schema Markup</span>
+                        <span>SEO Audits</span>
+                        <span>Search Performance Analysis</span>
+                        <span>International SEO</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="service">
+
+            <div class="service-grid">
+
+                <div class="service-number">07</div>
+
+                <div>
+                    <h3>Brand Perception & Conversion</h3>
+
+                    <p class="service-description">
+                        There can be a significant difference between what a company communicates and what a prospective customer actually takes away from it.
+                        <br><br>
+                        We examine the points where perception, messaging, digital experience and customer decision making meet, identifying friction that may be affecting consideration or conversion.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="service-list-title">Includes</div>
+
+                    <div class="service-list">
+                        <span>Brand Perception Analysis</span>
+                        <span>Customer Journey Analysis</span>
+                        <span>Conversion Audits</span>
+                        <span>Website Conversion Analysis</span>
+                        <span>Messaging Analysis</span>
+                        <span>Offer Positioning</span>
+                        <span>Trust & Credibility Signals</span>
+                        <span>Conversion Barriers</span>
+                        <span>Customer Decision Factors</span>
+                        <span>CTA Strategy</span>
+                        <span>Brand to Conversion Alignment</span>
+                        <span>Digital Experience Optimisation</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="thinking">
+
+    <div class="container">
+
+        <div class="section-number">03 · HOW WE THINK</div>
+
+        <div class="thinking-header">
+
+            <h2>
+                The problem is not always where it appears.
+            </h2>
+
+            <div class="thinking-copy">
+
+                <p>
+                    A social channel can underperform because the positioning is unclear.
+                </p>
+
+                <p>
+                    Content can struggle because there is no defined role behind it.
+                </p>
+
+                <p>
+                    A website can lose potential customers long before the conversion point.
+                </p>
+
+                <p>
+                    Search performance can be limited by problems that have little to do with content volume.
+                </p>
+
+                <p>
+                    So rather than treating every digital issue as a separate task, we look at the relationship between the moving parts.
+                </p>
+
+                <p>
+                    The work starts with understanding what is happening, then determining what needs to change.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="thinking-grid">
+
+            <div class="thinking-card">
+                <span>01</span>
+                <h3>Positioning</h3>
+            </div>
+
+            <div class="thinking-card">
+                <span>02</span>
+                <h3>Content</h3>
+            </div>
+
+            <div class="thinking-card">
+                <span>03</span>
+                <h3>Digital Experience</h3>
+            </div>
+
+            <div class="thinking-card">
+                <span>04</span>
+                <h3>Search</h3>
+            </div>
+
+            <div class="thinking-card">
+                <span>05</span>
+                <h3>Perception</h3>
+            </div>
+
+            <div class="thinking-card">
+                <span>06</span>
+                <h3>Conversion</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="industries" id="industries">
+
+    <div class="container">
+
+        <div class="section-number">04 · ACROSS MARKETS. ACROSS CATEGORIES.</div>
+
+        <h2>
+            Different industries.<br>
+            Different conditions.
+        </h2>
+
+        <div class="industry-grid">
+
+            <div class="industry">Real Estate</div>
+            <div class="industry">Construction & Infrastructure</div>
+            <div class="industry">Technology & SaaS</div>
+            <div class="industry">Cybersecurity</div>
+            <div class="industry">AI & Emerging Technology</div>
+            <div class="industry">Fintech & Financial Services</div>
+            <div class="industry">Professional Services</div>
+            <div class="industry">Healthcare</div>
+            <div class="industry">Pharmaceuticals & Life Sciences</div>
+            <div class="industry">Hospitality & Travel</div>
+            <div class="industry">E commerce & Retail</div>
+            <div class="industry">Beauty & Personal Care</div>
+            <div class="industry">Food & Beverage</div>
+            <div class="industry">Automotive & Mobility</div>
+            <div class="industry">Education & EdTech</div>
+            <div class="industry">Property & Facilities</div>
+            <div class="industry">Manufacturing</div>
+            <div class="industry">Logistics & Supply Chain</div>
+            <div class="industry">Media & Entertainment</div>
+            <div class="industry">Consumer Brands</div>
+            <div class="industry">Lifestyle</div>
+            <div class="industry">Energy & Utilities</div>
+            <div class="industry">Telecommunications</div>
+            <div class="industry">Legal & Advisory</div>
+            <div class="industry">Insurance</div>
+            <div class="industry">Real Estate Investment & Development</div>
+            <div class="industry">Architecture & Design</div>
+            <div class="industry">Agriculture & Agritech</div>
+            <div class="industry">Non Governmental & Development Organisations</div>
+
+        </div>
+
+        <p class="industry-note">
+            Our capabilities are not limited to these categories. Each engagement is shaped around the company, its market and its objectives.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="markets">
+
+    <div class="markets-bg"></div>
+
+    <div class="container markets-content">
+
+        <div class="eyebrow">
+            05 · WORKING ACROSS MARKETS
+        </div>
+
+        <h2>
+            Based in Nairobi.<br>
+            <span class="serif gold">Working remotely across markets.</span>
+        </h2>
+
+        <p>
+            Vantix works through remote collaboration across strategy, creative direction, digital execution, reporting and ongoing optimisation, allowing us to work with companies in different markets without changing how closely we work with the team behind the company.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="approach" id="approach">
+
+    <div class="container approach-grid">
+
+        <div>
+
+            <div class="section-number">06 · THE VANTIX APPROACH</div>
+
+            <h2>
+                Understand the company before deciding what the company needs to say.
+            </h2>
+
+        </div>
+
+        <div class="approach-copy">
+
+            <p>
+                We don't begin with:
+            </p>
+
+            <p>
+                <strong>“What should we post?”</strong>
+            </p>
+
+            <p>
+                We begin with the conditions around the brand.
+            </p>
+
+            <p>
+                The market.<br>
+                The audience.<br>
+                The competitive landscape.<br>
+                The positioning.<br>
+                The existing digital presence.<br>
+                The commercial objective.
+            </p>
+
+            <p>
+                Those factors determine what should be communicated, where it belongs, how it should be expressed and what needs to happen after someone sees it.
+            </p>
+
+            <p>
+                That thinking informs the work across every channel we manage.
+            </p>
+
+            <div class="approach-list">
+
+                <div class="approach-item">
+                    <span>01</span>
+                    <span>Understand</span>
+                </div>
+
+                <div class="approach-item">
+                    <span>02</span>
+                    <span>Diagnose</span>
+                </div>
+
+                <div class="approach-item">
+                    <span>03</span>
+                    <span>Define</span>
+                </div>
+
+                <div class="approach-item">
+                    <span>04</span>
+                    <span>Execute</span>
+                </div>
+
+                <div class="approach-item">
+                    <span>05</span>
+                    <span>Optimise</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="work" id="work">
+
+    <div class="container">
+
+        <div class="section-number">07 · SELECTED WORK</div>
+
+        <div class="work-header">
+
+            <h2>
+                Published work.
+            </h2>
+
+            <p class="work-intro">
+                A selection of published work across companies, industries and digital environments.
+            </p>
+
+        </div>
+
+
+        <div class="work-grid">
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/29596082/pexels-photo-29596082.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Modern real estate architecture"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 01 · Real Estate</div>
+
+                    <h3>Land Insights</h3>
+
+                    <p class="project-description">
+                        Published editorial work exploring land investment and property market considerations.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/land-insights-episode-1/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/36765732/pexels-photo-36765732.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professionals discussing business strategy"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 02 · Real Estate</div>
+
+                    <h3>Nairobi's Engines of Wealth Creation</h3>
+
+                    <p class="project-description">
+                        Published market focused editorial examining real estate and wealth creation in Nairobi.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/nairobis-top-engines-of-wealth-creation-in-real-estate/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/7598075/pexels-photo-7598075.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professional brand strategy workspace"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 03 · Property</div>
+
+                    <h3>Freehold Land in Kitengela</h3>
+
+                    <p class="project-description">
+                        Published property focused content built around land ownership and investment information.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/freehold-land-kitengela-kajiado-county/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/29596082/pexels-photo-29596082.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Modern high rise building"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 04 · Real Estate</div>
+
+                    <h3>Kisumu Land Investment</h3>
+
+                    <p class="project-description">
+                        Published content focused on land investment considerations and market opportunity.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/kisumu-land-investment-billionaires-3-5-years/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/4506937/pexels-photo-4506937.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professional creative production studio"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 05 · Property</div>
+
+                    <h3>Kiambu vs Murang'a</h3>
+
+                    <p class="project-description">
+                        Published comparative content examining two property markets through an investor focused lens.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/kiambu-vs-muranga-smart-investor-choice/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/17868833/pexels-photo-17868833.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Modern urban architecture"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 06 · Real Estate</div>
+
+                    <h3>Juja & Thika Land Trends</h3>
+
+                    <p class="project-description">
+                        Published market content examining property trends across Juja and Thika.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/juja-and-thika-land-trends-2025-2026/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/37605910/pexels-photo-37605910.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professional technology infrastructure"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 07 · Market Analysis</div>
+
+                    <h3>Growth Isn't Everything</h3>
+
+                    <p class="project-description">
+                        Published editorial work focused on identifying meaningful opportunity within the land market.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/growth-isnt-everything-how-to-spot-real-opportunity-in-kenyas-2026-land-market/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/7598075/pexels-photo-7598075.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professional digital workspace"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 08 · Real Estate</div>
+
+                    <h3>Property Investment Trends</h3>
+
+                    <p class="project-description">
+                        Published property content examining investment trends within the Kenyan market.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/property-investment-trends-in-kenya-2025/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/7014918/pexels-photo-7014918.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professional content editing workspace"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 09 · Real Estate</div>
+
+                    <h3>Land Insights Episode 2</h3>
+
+                    <p class="project-description">
+                        The second published piece within the Land Insights editorial series.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/land-insights-episode-2-2/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project">
+
+                <div class="project-image">
+                    <img
+                        src="https://images.pexels.com/photos/36765732/pexels-photo-36765732.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="Professional business collaboration"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-info">
+
+                    <div class="project-meta">Project 10 · Real Estate</div>
+
+                    <h3>Land Insights Episode 3</h3>
+
+                    <p class="project-description">
+                        The third published piece within the Land Insights editorial series.
+                    </p>
+
+                    <a class="project-link" href="https://mhasibuhousing.co.ke/land-insights-episode-3/" target="_blank" rel="noopener">
+                        View Project ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="feature">
+
+    <div class="container feature-grid">
+
+        <div class="feature-image">
+            <img
+                src="https://images.pexels.com/photos/4506937/pexels-photo-4506937.jpeg?auto=compress&cs=tinysrgb&w=2000"
+                alt="Professional creative studio workspace"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="feature-content">
+
+            <div>
+
+                <div class="eyebrow">
+                    VANTIX CREATIVE
+                </div>
+
+                <h2>
+                    Strategy informs the work.
+                </h2>
+
+                <p>
+                    Every channel has a role. Every piece of content sits within a larger commercial environment. Every digital experience creates an impression.
+                </p>
+
+                <p style="margin-top:18px;">
+                    Vantix brings those moving parts into the same conversation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            08 · LET'S TALK
+        </div>
+
+        <h2>
+            LET'S TALK
+        </h2>
+
+        <p class="contact-sub">
+            Based in Nairobi. Working remotely across markets.
+        </p>
+
+        <a class="btn" href="mailto:vantixcreativeagency@gmail.com">
+            Start a Conversation
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <div class="footer-logo">
+                    VANTIX
+                    <span>CREATIVE</span>
+                </div>
+
+                <p class="footer-description">
+                    Digital Marketing & Creative Strategy Agency
+                </p>
+
+            </div>
+
+            <div class="footer-services">
+                Social Media · Content · Brand Strategy · Digital Marketing · Websites · SEO · Conversion
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                Nairobi · Remote · Worldwide
+            </div>
+
+            <div>
+                © 2026 Vantix Creative. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+
+    const nav = document.querySelector(".nav-links");
+
+    if (nav.style.display === "flex") {
+
+        nav.style.display = "none";
+
+    } else {
+
+        nav.style.display = "flex";
+        nav.style.position = "absolute";
+        nav.style.top = "72px";
+        nav.style.left = "0";
+        nav.style.right = "0";
+        nav.style.padding = "25px";
+        nav.style.background = "#080808";
+        nav.style.flexDirection = "column";
+        nav.style.alignItems = "flex-start";
+        nav.style.gap = "22px";
+        nav.style.borderBottom = "1px solid rgba(255,255,255,0.1)";
+
+    }
+
+}
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        if (window.innerWidth <= 900) {
+
+            document.querySelector(".nav-links").style.display = "none";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+@Vantixcreative
+Comment
+ 
+
+Leave a comment
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
